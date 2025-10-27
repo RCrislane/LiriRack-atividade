@@ -29,11 +29,38 @@ janela.config(bg='black') # cor de fundo da janela
 frem_tela = Frame(janela, width=235, height=65, bg=bot_rosinha10)
 frem_tela.grid(row=0, column=0)                 #row=fileira, linha colunm= coluna #gri &  #color picker
 
-
 frem_corpo = Frame(janela, width=235, height=268, bg=bot_rosaclara9)
 frem_corpo.grid(row=1, column=0)                 #row=fileira, linha colunm= coluna #gri &  #color picker
 
+# variavel todos valores
+todos_valores =''
 
+# criando label
+valor_texto = StringVar()
+
+# criando função
+def entrar_valores(event):
+
+    global todos_valores
+
+    todos_valores = todos_valores + str(event)
+
+    #passando valor para tela
+    valor_texto.set(todos_valores)
+
+# função para fazer o calculo
+def calcular():
+    global todos_valores
+    resultado = eval(todos_valores)
+    
+    valor_texto.set(str(resultado))
+    todos_valores = (str(resultado))
+
+# asdasdsaimpar a tela C
+def limpar_tela():
+    global todos_valores
+    todos_valores = ""
+    valor_texto.set("")
 
 
 janela.mainloop()
