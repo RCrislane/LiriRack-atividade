@@ -6,6 +6,7 @@ from tkinter import ttk
 from tkinter import *   
 from tkinter import ttk       
 
+# liri 1 e raquel 1 trabalhando juntas :)
 #cores
 azul_escuro1 = "#010628"  #azul escuro
 branco2 = "#FEFFFE"  # branco
@@ -24,6 +25,7 @@ janela.geometry("235x326") # tamanho da janela
 janela.resizable(width= False, height= False) #ele restringe que vc tente abrir mais do que a tela existe
 janela.config(bg='black') # cor de fundo da janela
 
+# raquel commits 2------------------------------
 #  bg: background - fundo fg: foreground
 # #criando frames
 frem_tela = Frame(janela, width=235, height=65, bg=bot_rosinha10)
@@ -31,7 +33,10 @@ frem_tela.grid(row=0, column=0)                 #row=fileira, linha colunm= colu
 
 frem_corpo = Frame(janela, width=235, height=268, bg=bot_rosaclara9)
 frem_corpo.grid(row=1, column=0)                 #row=fileira, linha colunm= coluna #gri &  #color picker
+# raquel commits fim ------------------------------
 
+
+# liriel commits inicio 2------------------------------
 # variavel todos valores
 todos_valores =''
 
@@ -61,6 +66,12 @@ def limpar_tela():
     global todos_valores
     todos_valores = ""
     valor_texto.set("")
+# liriel commits fim ------------------------------
+
+
+# raquel commits inicio 3------------------------------
+app_label = Label(frem_tela, textvariable=valor_texto, width=16, height=2, padx=7, relief=FLAT, anchor="e", justify=RIGHT, bg=bot_rosinha10, fg=branco2,  font=('Ivy 18 '))
+app_label.place(x=0,y=0)
 
 
 janela.mainloop()
