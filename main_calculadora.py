@@ -1,0 +1,1 @@
+# iniciando a calculadora simples rosa - LiriRack-atividade/main_calculadora.py - v1.0 - multiplicação e divisão
