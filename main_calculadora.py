@@ -83,4 +83,13 @@ botao_1.place(x=0, y=0)
 botao_2 = Button(frem_corpo, command = lambda: entrar_valores('%'), text="%", width=5, height=2, font=('Ivy 13 bold'), relief=RAISED, overrelief=RIDGE)
 botao_2.place(x=118, y=0)
 
+# raquel commits 6 ------------------------------
+botao_3 = Button(frem_corpo, command = lambda: entrar_valores('/'), text="/", width=5, height=2, bg=bot_rosa6, fg=branco2, font=('Ivy 13 bold'), relief=RAISED, overrelief=RIDGE)
+botao_3.place(x=177, y=0)
+
+# raquel commits 7 ------------------------------
+botao_4 = Button(frem_corpo, command = lambda: entrar_valores('7'), text="7", width=5, height=2, font=('Ivy 13 bold'), relief=RAISED, overrelief=RIDGE)
+botao_4.place(x=0, y=52)
+
+
 janela.mainloop()
