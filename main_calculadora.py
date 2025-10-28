@@ -125,5 +125,9 @@ botao_12.place(x=0, y=156)
 botao_13 = Button(frem_corpo, command = lambda: entrar_valores('2'), text="2", width=5, height=2, font=('Ivy 13 bold'), relief=RAISED, overrelief=RIDGE)
 botao_13.place(x=59, y=156)
 
+# liriel commit 10 ----------------------
+botao_14 = Button(frem_corpo, command = lambda: entrar_valores('3'), text="3", width=5, height=2, font=('Ivy 13 bold'), relief=RAISED, overrelief=RIDGE)
+botao_14.place(x=118, y=156)
+
 janela.mainloop()
 
