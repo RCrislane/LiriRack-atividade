@@ -79,5 +79,8 @@ botao_1 = Button(frem_corpo, command=limpar_tela, text="C", width=11, height=2, 
 botao_1.place(x=0, y=0) 
     #x= horizontal largura ate o final y= vertical cima pra baixo, se desgruda de cima
 
+# raquel commits 5 ------------------------------
+botao_2 = Button(frem_corpo, command = lambda: entrar_valores('%'), text="%", width=5, height=2, font=('Ivy 13 bold'), relief=RAISED, overrelief=RIDGE)
+botao_2.place(x=118, y=0)
 
 janela.mainloop()
