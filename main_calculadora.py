@@ -73,5 +73,11 @@ def limpar_tela():
 app_label = Label(frem_tela, textvariable=valor_texto, width=16, height=2, padx=7, relief=FLAT, anchor="e", justify=RIGHT, bg=bot_rosinha10, fg=branco2,  font=('Ivy 18 '))
 app_label.place(x=0,y=0)
 
+# raquel commits 4------------------------------
+#criando botões
+botao_1 = Button(frem_corpo, command=limpar_tela, text="C", width=11, height=2, font=('Ivy 13 bold'), relief=RAISED, overrelief=RIDGE)
+botao_1.place(x=0, y=0) 
+    #x= horizontal largura ate o final y= vertical cima pra baixo, se desgruda de cima
+
 
 janela.mainloop()
