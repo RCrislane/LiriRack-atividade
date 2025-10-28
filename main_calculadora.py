@@ -25,18 +25,16 @@ janela.geometry("235x326") # tamanho da janela
 janela.resizable(width= False, height= False) #ele restringe que vc tente abrir mais do que a tela existe
 janela.config(bg='black') # cor de fundo da janela
 
-# raquel commits 2------------------------------
-#  bg: background - fundo fg: foreground
-# #criando frames
+# raquel commits 2: criando frames ------------------------------
 frem_tela = Frame(janela, width=235, height=65, bg=bot_rosinha10)
 frem_tela.grid(row=0, column=0)                 #row=fileira, linha colunm= coluna #gri &  #color picker
 
 frem_corpo = Frame(janela, width=235, height=268, bg=bot_rosaclara9)
 frem_corpo.grid(row=1, column=0)                 #row=fileira, linha colunm= coluna #gri &  #color picker
-# raquel commits fim ------------------------------
+# raquel commits 2: criando frames ------------------------------
 
 
-# liriel commits inicio 2------------------------------
+# liriel commits inicio 2: criando variaveis ------------------------------
 # variavel todos valores
 todos_valores =''
 
@@ -66,7 +64,7 @@ def limpar_tela():
     global todos_valores
     todos_valores = ""
     valor_texto.set("")
-# liriel commits fim ------------------------------
+# liriel commits fim 2: criando variaveis ------------------------------
 
 
 # raquel commits inicio 3------------------------------
@@ -98,7 +96,6 @@ botao_5.place(x=59, y=52)
 # raquel commits 9 ------------------------------
 botao_6 = Button(frem_corpo, command = lambda: entrar_valores('9'), text="9", width=5, height=2, font=('Ivy 13 bold'), relief=RAISED, overrelief=RIDGE)
 botao_6.place(x=118, y=52)
-
 
 # raquel commits 10 ------------------------------
 botao_7 = Button(frem_corpo, command = lambda: entrar_valores('*'), text="*", width=5, height=2, bg=bot_rosa6, fg=branco2, font=('Ivy 13 bold'), relief=RAISED, overrelief=RIDGE)
