@@ -26,7 +26,7 @@ janela.resizable(width= False, height= False) #ele restringe que vc tente abrir 
 janela.config(bg='black') # cor de fundo da janela
 
 # raquel commits 2: criando frames ------------------------------
-frem_tela = Frame(janela, width=235, height=65, bg=bot_rosinha10)
+frem_tela = Frame(janela, width=235, height=65, bg=bot_rosaescuro8) #MUDANDO A COR DO FUNDO PARA ROSA ESCURO para melhorar a visualização dos números digitados (contraste) -> Liriel
 frem_tela.grid(row=0, column=0)                 #row=fileira, linha colunm= coluna #gri &  #color picker
 
 frem_corpo = Frame(janela, width=235, height=268, bg=bot_rosaclara9)
@@ -68,7 +68,7 @@ def limpar_tela():
 
 
 # raquel commits inicio 3------------------------------
-app_label = Label(frem_tela, textvariable=valor_texto, width=16, height=2, padx=7, relief=FLAT, anchor="e", justify=RIGHT, bg=bot_rosinha10, fg=branco2,  font=('Ivy 18 '))
+app_label = Label(frem_tela, textvariable=valor_texto, width=16, height=2, padx=7, relief=FLAT, anchor="e", justify=RIGHT, bg=bot_rosaescuro8, fg=branco2,  font=('Ivy 18 ')) # MUDEI A COR DO FUNDO PARA ROSA ESCURO para melhorar a visualização dos números (contraste) -> Liriel
 app_label.place(x=0,y=0)
 
 # raquel commits 4------------------------------
